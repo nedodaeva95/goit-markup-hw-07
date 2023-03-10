@@ -23,7 +23,7 @@
   </head>
   <body>
     <!-------------------------------- TOP LINE ------------------------------------->
-    <!-- <header class="header-conteiner">
+    <header class="header-conteiner">
       <div class="corntainer main-nav">
         <a href="./index.html" class="logo-web"
           >WEB<span class="logo-header">STUDIO</span></a
@@ -51,8 +51,82 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="button-hamburger" data-menu-open>
+          <svg class="hamburger-icon" width="32" height="22">
+            <use href="./images/icons-svg-hw-6.svg#icon-charm_menu-hamburger"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+
+
+      <!-- mobile-menu -->
+
+
+      <div class="mobile-menu" data-menu>
+        <div class="menu-container">
+        <div class="menu-nav">
+          <button type="button" class="menu-btn" data-menu-close>
+            <svg width="8px" height="8px" class="svg-close">
+              <use
+                href="./images/icons-hw-4.svg#icon-close-black-18dp-2-1"
+              ></use>
+            </svg>
+          </button>
+        <ul class="navigation-list-menu">
+          <li class="navigation-menu">
+            <a class="nav-link-menu current" href="./index.html">Studio</a>
+          </li>
+          <li class="navigation-menu">
+            <a class="nav-link-menu" href="./portfolio.html">Portfolio</a>
+          </li>
+          <li class="navigation-menu">
+            <a class="nav-link-menu" href="">Contacts</a>
+          </li>
+        </ul>
+      </div>
+      <div class="menu-addres">
+        <ul class="address-menu">
+          <li class="link-phone-menu">
+            <a class="link-phone" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="link-address-menu">
+            <a class="mail-menu" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+        </ul>
+        <ul class="menu-social-list">
+          <li class="menu-item">
+            <a class="menu-soc-link" href="">
+              <svg class="menu-soc-icons" width="24px" height="24px">
+                <use href="./images/icons-hw-4.svg#icon-instagram--2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-soc-link" href="">
+              <svg class="menu-soc-icons" width="24px" height="24px">
+                <use href="./images/icons-hw-4.svg#icon-twitter-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-soc-link" href="">
+              <svg class="menu-soc-icons" width="24px" height="24px">
+                <use href="./images/icons-hw-4.svg#icon-facebook-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="menu-soc-link" href="">
+              <svg class="menu-soc-icons" width="24px" height="24px">
+                <use href="./images/icons-hw-4.svg#icon-linkedin-2"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+      </div>
+    </header>
 
     <!-------------------------------- HERO IMAGE ---------------------------->
     <main>
@@ -449,7 +523,7 @@
         </div>
       </section>
 
-      <!-- <section class="customers">
+      <section class="customers">
         <div class="corntainer">
           <h2 class="title-customers">Customers</h2>
           <ul class="customer-list">
@@ -485,12 +559,13 @@
             </li>
           </ul>
         </div>
-      </section> --> -->
+      </section>
     </main>
 
     <!------------------------------------------------- Footer -------------------------------------------------------------------------->
-    <!-- <footer>
+    <footer>
       <div class="corntainer fotter-container">
+        <div class="footer-wrap">
         <div class="footer-content">
           <a href="./index.html" class="logo-web-footer"
             >Web<span class="logo-footer">Studio</span></a
@@ -533,8 +608,10 @@
             </li>
           </ul>
         </div>
+      </div>
 
         <form class="footer-form">
+          <div class="subscribe-input">
           <p class="form-title">Subscribe</p>
           <div class="form-footer-section">
             <input
@@ -543,6 +620,7 @@
               type="text"
               name="email"
             />
+          
             <button class="form-footer-button" type="submit">
               Subscribe
               <svg class="input-button-icon" width="24px" height="24px">
@@ -550,9 +628,11 @@
               </svg>
             </button>
           </div>
+          </div>
         </form>
       </div>
-    </footer> -->
+    </footer>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
