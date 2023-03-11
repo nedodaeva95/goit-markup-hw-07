@@ -273,8 +273,7 @@ footer {
 
 .footer-content {
   width: 264px;
-  padding-bottom: 72px;
-  margin: 0 auto;
+  margin: 0 auto 72px auto;
 }
 
 .logo-web-footer {
@@ -307,9 +306,7 @@ footer {
 
 .fotter-social {
   width: 208px;
-  padding-top: 72px;
-  padding-bottom: 72px;
-  margin: 0 auto;
+  margin: 0 auto 72px auto;
 }
 
 .fotter-social-title {
@@ -873,13 +870,16 @@ footer {
 .team-cart {
   display: inline-block;
   margin-bottom: 72px;
-
   text-align: center;
   max-width: 264px;
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
+.team-cart:last-child {
+  margin-bottom: 0px;
 }
 
 .team-text {
@@ -1252,6 +1252,10 @@ footer {
     width: 408px;
   }
 
+  .subtitle {
+    text-align: start;
+  }
+
   .strategy-list {
     display: flex;
     flex-wrap: wrap;
@@ -1322,14 +1326,21 @@ footer {
 
   .footer-wrap {
     display: flex;
+    margin-bottom: 72px;
   }
 
   .footer-input {
     margin-bottom: 0px;
   }
 
+  .footer-content {
+    margin: 0px;
+    margin-right: 24px;
+  }
+
   .fotter-social {
     padding-top: 0px;
+    margin: 0px;
   }
 
   .subscribe-input {
@@ -1469,17 +1480,22 @@ footer {
 
   .fotter-container {
     display: flex;
-    padding-top: 96px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-wrap {
+    margin-bottom: 0px;
   }
 
   .footer-content {
     width: 264px;
-    padding-bottom: 100px;
+    margin-bottom: 0px;
   }
 
   .fotter-social {
     width: 208px;
-    margin-bottom: 130px;
+    margin-bottom: 0px;
     margin-left: 120px;
     padding-top: 0px;
   }
